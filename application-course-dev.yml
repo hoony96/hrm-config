@@ -11,3 +11,7 @@ hrm:
     title: 课程管理服务
     description: 课程管理服务接口文档
 
+# 开启熔断
+feign:
+  hystrix:
+    enabled: true
