@@ -1,0 +1,8 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: REDIS-SERVICE
+  datasource:
+      url: jdbc:mysql:///hrm-course?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+
