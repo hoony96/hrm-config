@@ -15,3 +15,9 @@ hrm:
 feign:
   hystrix:
     enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000 # 设置hystrix的超时时间为5000ms
