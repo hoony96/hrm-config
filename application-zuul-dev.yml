@@ -27,6 +27,10 @@ zuul:
       path: /course/**
       serviceId: COURSE-SERVICE
 
+ribbon:
+  ReadTimeout: 60000  # µ•Œª∫¡√Î ˝
+  SocketTimeout: 60000
+
 
 
 
