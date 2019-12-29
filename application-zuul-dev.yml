@@ -15,10 +15,6 @@ eureka:
 zuul:
   prefix: /services
   ignored-services: "*"
-  host:
-    max-per-route-connections: 60000
-    socket-timeout-millis: 60000
-    connect-timeout-millis: 60000
   routes:
     system:
       path: /system/**
@@ -27,10 +23,7 @@ zuul:
       path: /course/**
       serviceId: COURSE-SERVICE
 
-SYSTEM-SERVICE:
-  ribbon:
-    ReadTimeout: 60000  # µ•Œª∫¡√Î ˝
-    SocketTimeout: 60000
+
 
 
 
