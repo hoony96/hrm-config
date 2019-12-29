@@ -27,9 +27,10 @@ zuul:
       path: /course/**
       serviceId: COURSE-SERVICE
 
-ribbon:
-  ReadTimeout: 60000  # 单位毫秒数
-  SocketTimeout: 60000
+SYSTEM-SERVICE:
+  ribbon:
+    ReadTimeout: 60000  # 单位毫秒数
+    SocketTimeout: 60000
 
 
 
