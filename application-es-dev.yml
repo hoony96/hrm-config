@@ -1,0 +1,12 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: ES-SERVICE
+
+
+spring:
+  data:
+    elasticsearch:
+      cluster-name: my-ealsticsearch
+      cluster-nodes: 127.0.0.1:9300
