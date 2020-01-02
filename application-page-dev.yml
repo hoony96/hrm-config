@@ -1,0 +1,23 @@
+server:
+  port: 9006
+spring:
+  application:
+    name: PAGE-SERVICE
+  datasource:
+      url: jdbc:mysql:///hrm-page?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+
+hrm:
+  starter:
+    title: 页面静态化管理服务
+    description: 页面静态化管理服务接口文档
+
+# 开启熔断
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000 # 设置hystrix的超时时间为5000ms
