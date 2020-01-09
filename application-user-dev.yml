@@ -1,0 +1,23 @@
+server:
+  port: 9009
+spring:
+  application:
+    name: USER-SERVICE
+  datasource:
+      url: jdbc:mysql:///hrm-user?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
+
+hrm:
+  starter:
+    title: 用户中心服务
+    description: 用户中心服务接口文档
+
+# 开启熔断
+feign:
+  hystrix:
+    enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000 # 设置hystrix的超时时间为5000ms
